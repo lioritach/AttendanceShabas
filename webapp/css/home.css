@@ -1,3 +1,10 @@
+.empDetailsContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+}
+
 .homeContainer {
     width: 100%;
     margin-top: 3rem;
@@ -8,7 +15,7 @@
     flex-direction: row-reverse;
     width: 100%;
     height: 5rem;
-    gap: 3rem;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -34,4 +41,154 @@
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
+}
+
+
+.btnsHeader {
+    gap: 2rem;
+    margin: 1.5rem 0 0 1rem;
+}
+
+
+.sapUiTableColHdrCnt {
+    direction: rtl;
+}
+
+.sapUiTableCell {
+    border-left: .0625rem solid #e5e5e5;
+    border-right: none;
+}
+
+.bodyHbox {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tableVbox{
+    width: 90%;
+    /* margin-right: 0.5rem; */
+    direction: rtl;
+    margin-left: 11rem;
+}
+
+.iconsTab {
+    background: none;
+    width: 25rem;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+
+.leftContainerVbox {
+    display: flex;
+    align-items: center;
+    width: 15%;
+}
+
+.leftContainerApprove {
+    flex-direction: row-reverse;
+    gap: 3rem;
+    align-items: center;
+    background: #b1d4ff;
+    width: 90%;
+    height: 34px;
+    border-radius: 17px;
+}
+
+.leftContainerApproveIconHbox {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: relative;
+    right: 7px;
+}
+
+.acceptIcon {
+    font-family: SAP-icons;
+    position: absolute;
+    left: 2px;
+    top: 1px;
+}
+
+.leftContainerApproveText {
+    text-align: center;
+}
+
+.leftContainerMain {
+    border: 1px;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.approvalBox {
+    background-color: #e0ebf5; /* Light blue background */
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.approvalHeader {
+    background-color: #5cacee; /* Blue header background */
+    padding: 5px 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.headerText {
+    color: white;
+    font-weight: bold;
+}
+
+.headerIcon {
+    color: white;
+}
+
+.approvalContent {
+    padding: 10px 0;
+}
+
+.iconContainer {
+    position: relative;
+    text-align: center;
+}
+
+.iconWrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #2dca73; /* Green circular border */
+    background-color: #ffffff; /* White background inside the circle */
+}
+
+.approvalIcon {
+    color: #2dca73; /* Main icon color */
+    font-size: 1.8rem;
+}
+
+.statusIcon {
+    color: #2dca73; /* Green color for the approval icon */
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 1rem;
+}
+
+.itemLabel {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+.iconTabHbox {
+    justify-content: end;
+}
+
+.sapMITH {
+    background: none;
+    box-shadow: none;
 }
