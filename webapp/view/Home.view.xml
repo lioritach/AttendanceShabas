@@ -19,93 +19,95 @@
                 </IconTabBar>
             </HBox>
             <VBox id="tableVbox" class="tableVbox">
-                <table:Table id="empTable" selectionMode="None">
+                <table:Table id="empTable" selectionMode="None" rows="{ path: 'oData>/'}">
                     <table:columns>
                         <!--  -->
                         <table:Column> 
                             <Label text="{i18n>date}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>date}" />
                             </table:template>
                         </table:Column>
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>enterTime}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>enterTime}" />
                             </table:template>
                         </table:Column>
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>exitTime}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>exitTime}" />
                             </table:template>
                         </table:Column>
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>actions}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <!-- <core:Icon src="sap-icon://overflow" class="overflowIcon" /> -->
+                                <Image id="ellipsisIcon" class="ellipsisIcon" src="css/images/ellipsis-h.svg" lazyLoading="true" press="actionsPopup"/>
                             </table:template>
                         </table:Column>
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>totalHours}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>totalHours}" />
                             </table:template>
                         </table:Column>      
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>totalHoursNeto}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>totalHoursNeto}" />
                             </table:template>
                         </table:Column>     
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>certificates}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>certificates}" />
                             </table:template>
                         </table:Column>       
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>absenceWithPayment}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>absenceWithPayment}" />
                             </table:template>
                         </table:Column>      
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>absenceWithoutPayment}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>absenceWithoutPayment}" />
                             </table:template>
                         </table:Column>      
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>globalAbsence}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>globalAbsence}" />
                             </table:template>
                         </table:Column>      
                         <!--  -->
                         <table:Column>
                             <Label text="{i18n>note}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>note}" />
                             </table:template>
                         </table:Column>         
                          <!--  -->
                         <table:Column>
                             <Label text="{i18n>requests}" />
                             <table:template>
-                                <Text text="sdsds" />
+                                <Text text="{oData>requests}" />
                             </table:template>
                         </table:Column>                                                                                                                                              
                     </table:columns>
+
                 </table:Table>    
             </VBox>
         </HBox>

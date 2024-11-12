@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog title="Add Certificate" id="AddCertificateDialog" contentWidth="40rem" contentHeight="28rem">
+        <VBox id="addCertificatesContainer" class="addCertificatesContainer">
+            <HBox id="absenceTypeAddCertificates" class="absenceTypeAddCertificates">
+                <Text text="{i18n>absenceTypeTitle}" />
+                <ComboBox />
+            </HBox>
+        </VBox>
+        <endButton>
+            <Button id="closeAddCertificateBtn" class="closeAddCertificateBtn" text="{i18n>close}"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

@@ -86,13 +86,13 @@
                 </VBox>           
             </VBox>
        </HBox>
-       <HBox id="btnsHeader" class="btnsHeader">
+       <!-- <HBox id="btnsHeader" class="btnsHeader"> -->
             <!-- ADD CERTIFICATES -->
-            <VBox id="addCertificatesBtnVbox" class="addCertificatesBtnVbox">
-                <Button id="addCertificatesBtn" text="{i18n>addCertificate}" icon="sap-icon://add" />
-            </VBox>
+            <!-- <VBox id="addCertificatesBtnVbox" class="addCertificatesBtnVbox">
+                <Button id="addCertificatesBtn" text="{i18n>addCertificate}" icon="sap-icon://add" press="addCertificate"/>
+            </VBox> -->
 
-       </HBox>
+       <!-- </HBox> -->
     </HBox>
 
 </core:FragmentDefinition>

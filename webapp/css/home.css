@@ -192,3 +192,20 @@
     background: none;
     box-shadow: none;
 }
+
+
+.ellipsisIcon {
+    cursor: pointer;
+}
+
+.sapUiTableCell:focus::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    outline: none !important;
+}
+
+.sapMITBContent {
+    padding: 0.2rem !important;
+}

@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Popover id="actionsPopover" class="actionsPopover" placement="Left" showHeader="false">
+        <VBox>
+            <!-- FIRST BUTTON -->
+            <HBox>
+                <Button text="{i18n>attendanceUpdate}" width="100%" press="" />
+            </HBox>
+            <!-- SECOND BUTTON -->
+            <HBox>
+                <Button text="{i18n>shiftChange}" width="100%" press="" />
+            </HBox>
+            <!-- THIRD BUTTON -->
+            <HBox>
+                <Button text="{i18n>addCertificate}" width="100%" press="" />
+            </HBox>           
+        </VBox>
+    </Popover>
+</core:FragmentDefinition>

@@ -1,0 +1,18 @@
+.addCertificatesContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.leftContainerAddCertificates {
+    width: 50%;
+}
+
+.rightContainerAddCertificates {
+    width: 50%;
+}
+
+.sapUiTableCell {
+    text-align: center !important;
+}
+
