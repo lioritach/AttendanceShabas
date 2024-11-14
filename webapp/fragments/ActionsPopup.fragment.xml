@@ -11,7 +11,7 @@
             </HBox>
             <!-- THIRD BUTTON -->
             <HBox>
-                <Button text="{i18n>addCertificate}" width="100%" press="" />
+                <Button text="{i18n>addCertificate}" width="100%" press="addCertificate" />
             </HBox>           
         </VBox>
     </Popover>

@@ -1,13 +1,21 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
-    <Dialog title="Add Certificate" id="AddCertificateDialog" contentWidth="40rem" contentHeight="28rem">
+    <Dialog title="Add Certificate" id="AddCertificateDialog" contentWidth="31rem" contentHeight="22rem">
         <VBox id="addCertificatesContainer" class="addCertificatesContainer">
             <HBox id="absenceTypeAddCertificates" class="absenceTypeAddCertificates">
-                <Text text="{i18n>absenceTypeTitle}" />
+                <Text class="addCertificateTexts" text="{i18n>absenceTypeTitle}" />
                 <ComboBox />
+            </HBox>
+            <HBox class="absenceDatesAddCertificates">
+                <Text class="addCertificateTexts" text="{i18n>absenceDatesTitle}" />
+                <Input id="absenceDatesInput" class="absenceDatesInput" placeholder="{i18n>absenceTypePlaceholder}" valueHelpIconSrc="sap-icon://calendar" showValueHelp="true" valueHelpRequest="openCalendar"/>
+            </HBox>
+            <HBox class="noteAddCertificates">
+                <Text class="addCertificateTexts" text="{i18n>note}"/>
+                <TextArea placeholder="{i18n>notePlaceholder}" />
             </HBox>
         </VBox>
         <endButton>
-            <Button id="closeAddCertificateBtn" class="closeAddCertificateBtn" text="{i18n>close}"/>
+            <Button id="closeAddCertificateBtn" class="closeAddCertificateBtn" text="{i18n>close}" press="closeAddCertificate"/>
         </endButton>
     </Dialog>
 </core:FragmentDefinition>

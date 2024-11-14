@@ -1,18 +1,25 @@
 .addCertificatesContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-}
-
-.leftContainerAddCertificates {
-    width: 50%;
-}
-
-.rightContainerAddCertificates {
-    width: 50%;
+    gap: 3vw;
+    align-items: center;
+    margin-top: 1rem;
 }
 
 .sapUiTableCell {
     text-align: center !important;
 }
 
+
+.absenceTypeAddCertificates, .absenceDatesAddCertificates, .noteAddCertificates {
+    flex-direction: column;
+}
+
+.absenceTypeAddCertificates.sapMFlexItem, .absenceDatesAddCertificates.sapMFlexItem, .noteAddCertificates.sapMFlexItem{
+    text-align: end;
+}
+
+.absenceDatesInput .sapMInputBaseContentWrapper {
+    direction: rtl;
+}
