@@ -96,17 +96,43 @@ sap.ui.define(
 
           // Open the calendar fragment when ready
           this.oCalendarPopover.then(function (oPopover) {
-            oPopover.openBy(oButton); // Now oPopover is a valid Popover instance
+            oPopover.openBy(oButton);
           });
         },
 
         handleCalendarSelect: function (oEvent) {
           var selectedDates = oEvent.getSource().getSelectedDates()[0];
           var startDate = selectedDates.getStartDate().toLocaleDateString("he");
-          var endDate = selectedDates.getEndDate().toLocaleDateString("he");
+          var endDate = selectedDates.getEndDate();
+          if (!endDate) {
+            endDate = startDate;
+          } else {
+            endDate = selectedDates.getEndDate().toLocaleDateString("he");
+          }
           this.getView()
             .byId("absenceDatesInput")
             .setValue(`${startDate} - ${endDate}`);
+        },
+
+        onMonthsPress: function (oEvent) {
+          var oButton = oEvent.getSource(),
+            oView = this.getView();
+
+          // create popover
+          if (!this.oMonthsPress) {
+            this.oMonthsPress = Fragment.load({
+              id: oView.getId(),
+              name: "attendanceshabas.attendanceshabas.fragments.Months",
+              controller: this,
+            }).then(function (oPopover) {
+              oView.addDependent(oPopover);
+              // oPopover.bindElement("/ProductCollection/0");
+              return oPopover;
+            });
+          }
+          this.oMonthsPress.then(function (oPopover) {
+            oPopover.openBy(oButton);
+          });
         },
       }
     );

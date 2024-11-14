@@ -2,7 +2,7 @@
     <HBox id="titleContainer" class="titleContainer">
         <!-- LEFT CONTAINER -->
         <VBox class="calendarContainer">
-            <Button text="NOVEMBER" />
+            <Button text="NOVEMBER" icon="sap-icon://calendar" press="onMonthsPress"/>
         </VBox>
         <!-- RIGHT CONTAINER -->
         <VBox class="titleVbox">

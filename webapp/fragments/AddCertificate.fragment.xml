@@ -3,11 +3,11 @@
         <VBox id="addCertificatesContainer" class="addCertificatesContainer">
             <HBox id="absenceTypeAddCertificates" class="absenceTypeAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>absenceTypeTitle}" />
-                <ComboBox />
+                <ComboBox placeholder="{i18n>absenceTypePlaceholder}"/>
             </HBox>
             <HBox class="absenceDatesAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>absenceDatesTitle}" />
-                <Input id="absenceDatesInput" class="absenceDatesInput" placeholder="{i18n>absenceTypePlaceholder}" valueHelpIconSrc="sap-icon://calendar" showValueHelp="true" valueHelpRequest="openCalendar"/>
+                <Input id="absenceDatesInput" class="absenceDatesInput"  valueHelpIconSrc="sap-icon://calendar" showValueHelp="true" valueHelpRequest="openCalendar"/>
             </HBox>
             <HBox class="noteAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>note}"/>
