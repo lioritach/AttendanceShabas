@@ -32,18 +32,19 @@
                     id="icons"
                     class="icons"
                     select="switchTab"
+                    selectedKey="absence"
                 >
                     <items>
-                        <IconTabFilter
-                            key="absence"
-                            text="{i18n>allAbsence}"
-                            class="tabText"
-                        />
                         <IconTabFilter
                             key="onlyCorrectionsinc"
                             text="{i18n>onlyCorrectionsinc}"
                             class="tabText"
                         />
+                        <IconTabFilter
+                            key="absence"
+                            text="{i18n>allAbsence}"
+                            class="tabText"
+                        />                        
                     </items>
                 </IconTabBar>
             </HBox>
@@ -55,16 +56,18 @@
                 <HBox class="tbl">
                     <Table items="{path: 'oData>/'}">
                         <columns>
-                            <Column>
+                            <Column width="8vw">
                                 <Label text="{i18n>date}" />
                             </Column>
                             <Column
                                 minScreenWidth="Tablet"
                                 demandPopin="true"
+                                width="8vw"
                             >
                                 <Label text="{i18n>enterTime}" />
                             </Column>
                             <Column
+                            width="8vw"
                                 minScreenWidth="Desktop"
                                 demandPopin="true"
                                 hAlign="End"
@@ -78,22 +81,22 @@
                             >
                                 <Label text="{i18n>actions}" />
                             </Column>
-                            <Column hAlign="Left">
+                            <Column hAlign="Left" width="7vw">
                                 <Label text="{i18n>totalHours}" />
                             </Column>
-                            <Column hAlign="Left">
+                            <Column hAlign="Left" width="8vw"> 
                                 <Label text="{i18n>totalHoursNeto}" />
                             </Column>
                             <Column hAlign="Left">
                                 <Label text="{i18n>certificates}" />
                             </Column>
-                            <Column hAlign="Left">
+                            <Column hAlign="Left" width="9vw">
                                 <Label text="{i18n>absenceWithPayment}" />
                             </Column>
-                            <Column hAlign="Left">
+                            <Column hAlign="Left" width="11vw">
                                 <Label text="{i18n>absenceWithoutPayment}" />
                             </Column>
-                            <Column hAlign="Left">
+                            <Column hAlign="Left" width="9vw">
                                 <Label text="{i18n>globalAbsence}" />
                             </Column>
                             <Column hAlign="Left">
