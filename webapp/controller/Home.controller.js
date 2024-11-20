@@ -122,6 +122,7 @@ sap.ui.define(
           if (!this.oMonthsPress) {
             this.oMonthsPress = Fragment.load({
               id: oView.getId(),
+
               name: "attendanceshabas.attendanceshabas.fragments.Months",
               controller: this,
             }).then(function (oPopover) {
@@ -134,6 +135,14 @@ sap.ui.define(
             oPopover.openBy(oButton);
           });
         },
+
+        openAttendanceUpdate: async function () {
+          this.openAttendanceUpdate = await this.loadFragment({
+            name: "attendanceshabas.attendanceshabas.fragments.AttendanceUpdate",
+          });
+          this.openAttendanceUpdate.open();
+        }
+
       }
     );
   }

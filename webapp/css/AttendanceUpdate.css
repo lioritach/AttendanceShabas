@@ -1,0 +1,7 @@
+.dayDetails {
+    background: #0037ff1f;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    padding: 3vh;
+}

@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Dialog title="{i18n>addCertificateTitle}"  class="AddCertificateDialog">
+        <customHeader>
+            <Bar>
+                <contentLeft>
+                    <!-- TITLE -->
+                    <Title text="ריכוז תנועות עבור יום א" />
+                </contentLeft>
+            </Bar>
+        </customHeader>
+        <VBox class="">
+            <!-- BODY -->
+            <HBox class="dayDetails" justifyContent="SpaceBetween" width="100%"> 
+
+            </HBox>
+        </VBox>
+        <endButton>
+            <Button class="closeAddCertificateBtn" text="{i18n>close}" press="closeAddCertificate"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

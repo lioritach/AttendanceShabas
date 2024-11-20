@@ -3,7 +3,7 @@
         <VBox>
             <!-- FIRST BUTTON -->
             <HBox>
-                <Button text="{i18n>attendanceUpdate}" width="100%" press="" />
+                <Button text="{i18n>attendanceUpdate}" width="100%" press="openAttendanceUpdate" />
             </HBox>
             <!-- SECOND BUTTON -->
             <HBox>
