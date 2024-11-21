@@ -56,13 +56,14 @@
                 <HBox class="tbl">
                     <Table items="{path: 'oData>/'}">
                         <columns>
-                            <Column width="8vw">
+                            <Column width="8vw" hAlign="Left">
                                 <Label text="{i18n>date}" />
                             </Column>
                             <Column
                                 minScreenWidth="Tablet"
                                 demandPopin="true"
                                 width="8vw"
+                                hAlign="Left"
                             >
                                 <Label text="{i18n>enterTime}" />
                             </Column>
@@ -70,7 +71,7 @@
                             width="8vw"
                                 minScreenWidth="Desktop"
                                 demandPopin="true"
-                                hAlign="End"
+                                hAlign="Left"
                             >
                                 <Label text="{i18n>exitTime}" />
                             </Column>
@@ -107,7 +108,7 @@
                             </Column>
                         </columns>
                         <items>
-                            <ColumnListItem>
+                            <ColumnListItem vAlign="Middle">
                                 <cells>
                                     <VBox >
                                         <Text text="{oData>date}" />

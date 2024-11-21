@@ -40,6 +40,45 @@ sap.ui.define(
             // Add more objects as needed
           ];
 
+          var dates = [
+            {
+              name: "ינואר",
+            },
+            {
+              name: "פברואר",
+            },
+            {
+              name: "מרץ",
+            },
+            {
+              name: "אפריל",
+            },
+            {
+              name: "מאי",
+            },
+            {
+              name: "יוני",
+            },
+            {
+              name: "יולי",
+            },
+            {
+              name: "אוגוסט",
+            },
+            {
+              name: "ספטמבר",
+            },
+            {
+              name: "אוקטובר",
+            },
+            {
+              name: "נובמבר",
+            },
+            {
+              name: "דצמבר",
+            },
+          ];
+          this.getOwnerComponent().setModel(new JSONModel(dates), "Dates");
           this.getOwnerComponent().setModel(new JSONModel(oData), "oData");
           this.getOwnerComponent().setModel(new JSONModel(data), "EmpDetails");
         },
@@ -122,7 +161,6 @@ sap.ui.define(
           if (!this.oMonthsPress) {
             this.oMonthsPress = Fragment.load({
               id: oView.getId(),
-
               name: "attendanceshabas.attendanceshabas.fragments.Months",
               controller: this,
             }).then(function (oPopover) {
@@ -141,8 +179,7 @@ sap.ui.define(
             name: "attendanceshabas.attendanceshabas.fragments.AttendanceUpdate",
           });
           this.openAttendanceUpdate.open();
-        }
-
+        },
       }
     );
   }

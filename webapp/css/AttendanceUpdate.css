@@ -5,3 +5,19 @@
     height: 6vh;
     padding: 3vh;
 }
+
+.hoursReportAttUpdHbox {
+    padding: 2vh;
+}
+
+.hoursReportAttUpd {
+    text-align: end;
+}
+
+.attUpdTableHbox {
+    direction: rtl;
+}
+
+.attUpdTable .sapMListTblCell.sapMTblCellFocusable {
+    text-align: right !important;
+}

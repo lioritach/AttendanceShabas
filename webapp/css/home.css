@@ -236,3 +236,46 @@ font-family: sans-serif;
 .sapMITBContent {
     padding: 0.2rem !important;
 }
+
+/* Grid container for the items */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(4, auto);  /* 4 rows */
+    gap: 1rem; /* Spacing between grid items */
+    padding: 1rem; /* Padding inside the grid */
+  }
+  
+  /* Each grid item */
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for cards */
+    border: 1px solid #ccc; /* Border around cards */
+    border-radius: 8px; /* Rounded corners */
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    text-align: center;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    cursor: pointer; /* Indicate clickable items */
+  }
+  
+  /* Hover effect */
+  .grid-item:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge item on hover */
+  }
+  
+  /* Active (clicked) state */
+  .grid-item:active, .monthsBtn .sapMBtnInner:active {
+    background-color: #d0d0d0; /* Darker background when clicked */
+    transform: scale(1); /* Reset scale on click */
+  }
+  
+  .monthsBtn .sapMBtnInner {
+    border: none !important;
+    background: none !important;
+  }
+  
