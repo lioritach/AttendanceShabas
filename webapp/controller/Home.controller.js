@@ -11,6 +11,39 @@ sap.ui.define(
       "attendanceshabas.attendanceshabas.controller.Home",
       {
         onInit: function () {
+          this.getView().addEventDelegate(
+            {
+              onBeforeShow: jQuery.proxy(function (oEvent) {
+                this.onBeforeShow(oEvent);
+              }),
+            },
+            this
+          );
+        },
+
+        onBeforeShow: function (oEvent) {
+          this.oBundle = this.getOwnerComponent()
+            .getModel("i18n")
+            .getResourceBundle();
+          var currentDateDay = new Date()
+            .toLocaleDateString("he-IL")
+            .split(".")[0];
+          var currentDateMonth = new Date(
+            new Date().setMonth(new Date().getMonth())
+          )
+            .toLocaleDateString("he-IL")
+            .split(".")[1];
+          var currentDateYear = new Date()
+            .toLocaleDateString("he-IL")
+            .split(".")[2];
+
+          if (currentDateMonth.length === 1) {
+            currentDateMonth = "0" + currentDateMonth;
+          }
+          var curMonthHeb = this.changeMonthToHeb(currentDateMonth);
+          this.getView()
+            .byId("calendar-date")
+            .setText(curMonthHeb + " " + currentDateYear);
           let data = [
             {
               fullName: "אלי כהן",
@@ -82,7 +115,54 @@ sap.ui.define(
           this.getOwnerComponent().setModel(new JSONModel(oData), "oData");
           this.getOwnerComponent().setModel(new JSONModel(data), "EmpDetails");
         },
+        changeMonthToHeb: function (month) {
+          switch (month) {
+            case "01":
+              return this.oBundle.getText("January");
+              break;
+            case "02":
+              return this.oBundle.getText("February");
+              break;
 
+            case "03":
+              return this.oBundle.getText("March");
+              break;
+
+            case "04":
+              return this.oBundle.getText("April");
+              break;
+
+            case "05":
+              return this.oBundle.getText("May");
+              break;
+
+            case "06":
+              return this.oBundle.getText("June");
+              break;
+
+            case "07":
+              return this.oBundle.getText("July");
+              break;
+
+            case "08":
+              return this.oBundle.getText("August");
+              break;
+
+            case "09":
+              return this.oBundle.getText("September");
+              break;
+
+            case "10":
+              return this.oBundle.getText("October");
+              break;
+            case "11":
+              return this.oBundle.getText("November");
+              break;
+            case "12":
+              return this.oBundle.getText("December");
+              break;
+          }
+        },
         addCertificate: async function () {
           this.addCertificate = await this.loadFragment({
             name: "attendanceshabas.attendanceshabas.fragments.AddCertificate",
@@ -94,6 +174,12 @@ sap.ui.define(
           this.addCertificate.close();
           this.addCertificate.destroy();
           this.addCertificate = null;
+        },
+        addReport: async function () {
+          this.addReport = await this.loadFragment({
+            name: "attendanceshabas.attendanceshabas.fragments.addReport",
+          });
+          this.addReport.open();
         },
 
         actionsPopup: function (oEvent) {
