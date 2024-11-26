@@ -12,7 +12,19 @@
             <!-- THIRD BUTTON -->
             <HBox  justifyContent="Center">
                 <Button  class="action-popups-btn" text="{i18n>addCertificate}" width="100%" press="addCertificate" />
-            </HBox>           
+            </HBox>
+            <!-- FOURTH BUTTON -->
+            <HBox justifyContent="Center">
+                <Button  class="action-popups-btn" text="{i18n>vacationRequest}" width="100%" press="" />
+            </HBox>
+            <!-- FIFTH BUTTON -->
+            <HBox justifyContent="Center">
+                <Button  class="action-popups-btn" text="{i18n>restDayReport}" width="100%" press="" />
+            </HBox>     
+            <!-- SIXTH BUTTON -->
+            <HBox justifyContent="Center">
+                <Button  class="action-popups-btn" text="{i18n>addNote}" width="100%" press="" />
+            </HBox>                        
         </VBox>
     </Popover>
 </core:FragmentDefinition>

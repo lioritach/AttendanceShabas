@@ -1,63 +1,62 @@
 .AddCertificateDialog {
-  width: 22rem;
-  min-height: 22rem;
+    width: 22rem;
+    min-height: 22rem;
 }
 
 .addCertificatesContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 3vw;
-  align-items: center;
-  padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3vw;
+    align-items: center;
+    padding: 1vw;
 }
 
 .sapUiTableCell {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 .absenceTypeAddCertificates,
 .absenceDatesAddCertificates,
 .noteAddCertificates {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .absenceTypeAddCertificates.sapMFlexItem,
 .absenceDatesAddCertificates.sapMFlexItem,
 .noteAddCertificates.sapMFlexItem {
-  text-align: end;
-  width: 100%;
+    text-align: end;
+    width: 100%;
 }
 
 .absenceDatesInput .sapMInputBaseContentWrapper {
-  direction: rtl;
+    direction: rtl;
 }
 
 .noteTextArea .sapMInputBaseContentWrapper {
-  width: 13rem !important;
-  height: 5rem;
+    width: 13rem !important;
+    height: 5rem;
 }
 
 .timeContainer {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1rem;
 }
 
 .from_end_time {
-  direction: rtl;
+    direction: rtl;
 }
 
-.sapMInputBase:not(.sapMInputBaseHasEndIcons):not(.sapMInputBaseHasBeginIcons)
-  .sapMInputBaseInner,
+.sapMInputBase:not(.sapMInputBaseHasEndIcons):not(.sapMInputBaseHasBeginIcons) .sapMInputBaseInner,
 .sapMInputBaseNoWidth .sapMInputBaseInner {
-  direction: rtl;
+    direction: rtl;
 }
 
 .AddCertificateDialog.sapMPopup-CTX .sapMIBar.sapMHeader-CTX {
-  direction: rtl;
+    direction: rtl;
 }
 
 .AddCertificateDialog .sapMDialogTitle {
-  font-weight: bold;
+    font-weight: bold;
 }

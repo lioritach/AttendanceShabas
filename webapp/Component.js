@@ -2,17 +2,14 @@
  * eslint-disable @sap/ui5-jsdocs/no-jsdoc
  */
 
-sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "attendanceshabas/attendanceshabas/model/models"
-    ],
+sap.ui.define(
+    ['sap/ui/core/UIComponent', 'sap/ui/Device', 'attendanceshabas/attendanceshabas/model/models'],
     function (UIComponent, Device, models) {
-        "use strict";
+        'use strict';
 
-        return UIComponent.extend("attendanceshabas.attendanceshabas.Component", {
+        return UIComponent.extend('attendanceshabas.attendanceshabas.Component', {
             metadata: {
-                manifest: "json"
+                manifest: 'json',
             },
 
             /**
@@ -28,8 +25,8 @@ sap.ui.define([
                 this.getRouter().initialize();
 
                 // set the device model
-                this.setModel(models.createDeviceModel(), "device");
-            }
+                this.setModel(models.createDeviceModel(), 'device');
+            },
         });
-    }
+    },
 );

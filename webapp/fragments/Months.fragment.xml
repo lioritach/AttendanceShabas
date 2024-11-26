@@ -3,15 +3,26 @@
     xmlns:core="sap.ui.core">
     <ResponsivePopover
         id="monthsPopover"
-        title="חודשים"
+        showHeader="false"
         class="sapUiContentPadding"
         placement="Bottom">
         <content>
+            <HBox class="navigationContainer">
+                <Label id="calendarYear" class="calendarYear" text="" />
+                <HBox class="navigationBtns">
+                    <VBox>
+                        <Button id="previousYear" icon="sap-icon://navigation-left-arrow" tooltip="{i18n>previousYear}" press="onNavigationYears('previousYear')" />
+                    </VBox>
+                    <VBox >
+                        <Button id="nextYear" icon="sap-icon://navigation-right-arrow" tooltip="{i18n>nextYear}" press="onNavigationYears('nextYear')" />
+                    </VBox>
+                </HBox>
+            </HBox>
             <!-- Grid Container -->
             <ScrollContainer width="100%" height="auto" vertical="true" horizontal="false">
                 <VBox class="grid-container" items="{Dates>/}" >
                     <VBox class="grid-item">
-                        <Button class="monthsBtn" text="{Dates>name}" />
+                        <Button class="monthsBtn" text="{Dates>name}" press="onSelectedMonth" />
                     </VBox>
                 </VBox>
             </ScrollContainer>

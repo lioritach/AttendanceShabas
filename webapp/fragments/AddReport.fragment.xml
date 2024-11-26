@@ -3,7 +3,7 @@
     <customHeader>
     <Bar>
         <contentRight>
-            <Button icon="sap-icon://decline" press="closeReport"/>
+            <Button icon="sap-icon://decline" press="closeFragments('addReport')"/>
         </contentRight>
         <contentLeft>
         <Title text="{i18n>addReport}"/>
@@ -20,11 +20,11 @@
                 <ComboBox />
             </HBox>
              <HBox  class="absenceTypeAddCertificates">
-                <Text class="addCertificateTexts" text="{i18n>popupDate}" />
+                <Text class="addCertificateTexts" text="{i18n>date}" />
                 <DatePicker />
             </HBox>
             <HBox  class="absenceTypeAddCertificates">
-                <Text class="addCertificateTexts" text="{i18n>popupTime}" />
+                <Text class="addCertificateTexts" text="{i18n>hour}" />
                 <TimePicker />
             </HBox>
 
@@ -34,7 +34,7 @@
             </HBox>
         </VBox>
         <endButton>
-            <Button id="closeAddCertificateBtn" class="closeAddCertificateBtn" text="{i18n>close}" press="closeAddCertificate"/>
+            <Button id="addReportCloseBtn" class="closeAddCertificateBtn" text="{i18n>close}" press="closeFragments('addReport')"/>
         </endButton>
     </Dialog>
 </core:FragmentDefinition>

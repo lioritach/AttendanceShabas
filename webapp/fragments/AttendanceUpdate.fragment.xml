@@ -69,7 +69,7 @@
             </HBox>
         </VBox>
         <endButton>
-            <Button class="closeAddCertificateBtn" text="{i18n>close}" press="closeAddCertificate"/>
+            <Button id="attendanceUpdateBtn" class="attendanceUpdateBtn" text="{i18n>close}" press="closeFragments('attendanceUpdate')"/>
         </endButton>
     </Dialog>
 </core:FragmentDefinition>

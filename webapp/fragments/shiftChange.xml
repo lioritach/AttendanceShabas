@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+ <Dialog title="{i18n>shiftChange}" id="shiftChange" class="shiftChange">
+        <HBox>
+        </HBox>
+        <endButton>
+            <Button id="shiftChangeBtn" class="shiftChangeBtn" text="{i18n>close}" press="closeFragments('shiftChange')"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>
