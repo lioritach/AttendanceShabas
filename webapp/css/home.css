@@ -1,3 +1,7 @@
+.sapMComboBox {
+    direction: rtl;
+}
+
 .titleContainer {
     display: flex;
     justify-content: space-between;
@@ -306,7 +310,7 @@
 }
 .calendar-date .sapMBtnInner.sapMBtnText,
 .calendar-date .sapMBtnInner.sapMBtnText:hover {
-    background-color: #00ccf2;
+    background-color: #0064d9;
     font-size: 1rem;
     color: white !important;
     letter-spacing: 0;

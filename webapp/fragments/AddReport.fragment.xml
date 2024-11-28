@@ -11,17 +11,17 @@
     </Bar>
     </customHeader>
         <VBox  class="addCertificatesContainer">
-            <HBox  class="absenceTypeAddCertificates">
+            <HBox class="absenceTypeAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>typeReport}" />
-                <ComboBox placeholder="{i18n>fillTypeReport}"/>
+                <ComboBox class="fillTypeReport" placeholder="{i18n>fillTypeReport}"/>
             </HBox>
             <HBox  class="absenceTypeAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>reasonReport}" />
                 <ComboBox />
             </HBox>
              <HBox  class="absenceTypeAddCertificates">
-                <Text class="addCertificateTexts" text="{i18n>date}" />
-                <DatePicker />
+                <Label class="addCertificateTexts" text="{i18n>date}" />
+                <Text id="addReportDateText" text="" />
             </HBox>
             <HBox  class="absenceTypeAddCertificates">
                 <Text class="addCertificateTexts" text="{i18n>hour}" />

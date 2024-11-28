@@ -178,17 +178,19 @@ sap.ui.define(
                 }
             },
 
-            addReport: async function () {
+            addReport: async function (oEvent) {
                 this.addReport = await this.loadFragment({
                     name: 'attendanceshabas.attendanceshabas.fragments.addReport',
                 });
                 this.addReport.open();
+
             },
 
             actionsPopup: function (oEvent) {
                 var oButton = oEvent.getSource(),
                     oView = this.getView();
                 // create popover
+                this.selectedRow = oButton.getBindingContext("oData").getPath();
                 if (!this._pPopover) {
                     this._pPopover = Fragment.load({
                         id: oView.getId(),
